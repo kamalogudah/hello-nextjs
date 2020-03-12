@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/post.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/p/[id].js"],{
 
 /***/ "./components/Header.js":
 /*!******************************!*\
@@ -648,21 +648,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost&absolutePagePath=%2FUsers%2Fogudah%2FSites%2FNextJs%2Fhello-next%2Fpages%2Fpost.js!./":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost&absolutePagePath=%2FUsers%2Fogudah%2FSites%2FNextJs%2Fhello-next%2Fpages%2Fpost.js ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fogudah%2FSites%2FNextJs%2Fhello-next%2Fpages%2Fp%2F%5Bid%5D.js!./":
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fogudah%2FSites%2FNextJs%2Fhello-next%2Fpages%2Fp%2F%5Bid%5D.js ***!
+  \**************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/post", function() {
-      var mod = __webpack_require__(/*! ./pages/post.js */ "./pages/post.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/p/[id]", function() {
+      var mod = __webpack_require__(/*! ./pages/p/[id].js */ "./pages/p/[id].js")
       if(true) {
-        module.hot.accept(/*! ./pages/post.js */ "./pages/post.js", function() {
-          if(!next.router.components["/post"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/post.js */ "./pages/post.js")
-          next.router.update("/post", updatedPage)
+        module.hot.accept(/*! ./pages/p/[id].js */ "./pages/p/[id].js", function() {
+          if(!next.router.components["/p/[id]"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/p/[id].js */ "./pages/p/[id].js")
+          next.router.update("/p/[id]", updatedPage)
         })
       }
       return mod
@@ -4589,71 +4589,59 @@ try {
 
 /***/ }),
 
-/***/ "./pages/post.js":
-/*!***********************!*\
-  !*** ./pages/post.js ***!
-  \***********************/
+/***/ "./pages/p/[id].js":
+/*!*************************!*\
+  !*** ./pages/p/[id].js ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Post; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-var _jsxFileName = "/Users/ogudah/Sites/NextJs/hello-next/pages/post.js";
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.js");
+var _jsxFileName = "/Users/ogudah/Sites/NextJs/hello-next/pages/p/[id].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-
-var Content = function Content() {
+function Post() {
   var router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h1", {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, router.query.title), __jsx("p", {
+  }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
+  }, router.query.id), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
   }, "This is the blog post content."));
-};
-
-var Page = function Page() {
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx(Content, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Page);
+}
 
 /***/ }),
 
 /***/ 2:
-/*!**************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fpost&absolutePagePath=%2FUsers%2Fogudah%2FSites%2FNextJs%2Fhello-next%2Fpages%2Fpost.js ***!
-  \**************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fogudah%2FSites%2FNextJs%2Fhello-next%2Fpages%2Fp%2F%5Bid%5D.js ***!
+  \******************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fpost&absolutePagePath=%2FUsers%2Fogudah%2FSites%2FNextJs%2Fhello-next%2Fpages%2Fpost.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fpost&absolutePagePath=%2FUsers%2Fogudah%2FSites%2FNextJs%2Fhello-next%2Fpages%2Fpost.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fogudah%2FSites%2FNextJs%2Fhello-next%2Fpages%2Fp%2F%5Bid%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fogudah%2FSites%2FNextJs%2Fhello-next%2Fpages%2Fp%2F%5Bid%5D.js!./");
 
 
 /***/ }),
@@ -4670,4 +4658,4 @@ module.exports = dll_82519ec661270f7f484f;
 /***/ })
 
 },[[2,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=post.js.map
+//# sourceMappingURL=[id].js.map

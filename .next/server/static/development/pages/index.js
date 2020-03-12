@@ -1879,7 +1879,7 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
@@ -1898,7 +1898,8 @@ const PostLink = props => __jsx("li", {
   },
   __self: undefined
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  href: `/post?title=${props.title}`,
+  href: "/p/[id]",
+  as: `/p/${props.id}`,
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6
@@ -1910,46 +1911,46 @@ const PostLink = props => __jsx("li", {
     lineNumber: 7
   },
   __self: undefined
-}, props.title)));
+}, props.id)));
 
-function Index() {
+function Blog() {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   }, "My Blog"), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   }, __jsx(PostLink, {
-    title: "Hello Next.js",
+    id: "hello-nextjs",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), __jsx(PostLink, {
+    id: "learn-nextjs",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
   }), __jsx(PostLink, {
-    title: "Learn Next.js is awesome",
+    id: "deploy-nextjs",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
-    },
-    __self: this
-  }), __jsx(PostLink, {
-    title: "Deploy apps with Zeit",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
     },
     __self: this
   })));
