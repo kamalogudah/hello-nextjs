@@ -4609,27 +4609,37 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var Page = function Page() {
+var Content = function Content() {
   var router = Object(next_router__WEBPACK_IMPORTED_MODULE_1__["useRouter"])();
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, __jsx("h1", {
+  }, router.query.title), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, router.query.title), __jsx("p", {
+  }, "This is the blog post content."));
+};
+
+var Page = function Page() {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 15
     },
     __self: this
-  }, "This is the blog post content."));
+  }, __jsx(Content, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Page);
